@@ -19,8 +19,8 @@ describe 'Movie' do
     end
 
     it 'has a release date' do
-      movie.release_date = 1999
-      expect(movie.release_date).to eq(1999)
+      movie.release_date = "1999"
+      expect(movie.release_date).to eq("1999")
     end
 
     it 'has a director' do
@@ -44,7 +44,7 @@ describe 'Movie' do
       expect{Movie.new}.to_not raise_error
     end
 
-    it 'can be instantiated with a hasn of attributes' do
+    it 'can be instantiated with a hash of attributes' do
       expect{Movie.new(attributes)}.to_not raise_error
     end
   end
