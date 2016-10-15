@@ -1,3 +1,4 @@
+require 'pry'
 describe 'Movie' do
   let(:attributes) {{
       title: "The Sting",
@@ -20,7 +21,7 @@ describe 'Movie' do
 
     it 'has a release date' do
       movie.release_date = 1999
-      expect(movie.release_date).to eq(1999)
+     expect(movie.release_date).to eq(1999)
     end
 
     it 'has a director' do
